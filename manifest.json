@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Where's penguin?",
+  "version": "1.0",
+  "description": "An extension that turns every page into a game. Find the penguin!",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["./styles.css"],
+      "js": ["./jquery-3.1.1.min.js", "./main.js"]
+    }
+  ],
+  "web_accessible_resources": ["./penguin.html"]
+}
